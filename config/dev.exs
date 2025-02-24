@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :forum, Forum.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "newpassword",
   hostname: "localhost",
   database: "forum_dev",
   stacktrace: true,
