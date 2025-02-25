@@ -14,11 +14,15 @@ defmodule ForumWeb.Router do
     plug :accepts, ["json"]
   end
 
+
+
+
   scope "/", ForumWeb do
     pipe_through :browser
 
     get "/", PageController, :home
     get "/users", PageController, :users
+    get "/*path", PageController, :index
   end
 
   # Other scopes may use custom stacks.
